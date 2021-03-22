@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="connect">connect</button><br>
+    <input type="text">
+    <button class="send">send</button>
+    <div class="content"></div>
+    <script>
+        const connect_btn = document.querySelector('.connect')
+        const input = document.querySelector('input')
+        const send_btn = document.querySelector('.send')
+        const content_box = document.querySelector('.content')
+        const ws = new WebSocket('ws://localhost:3030')
+    </script>
+</body>
+</html>

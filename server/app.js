@@ -12,3 +12,6 @@ app.use(headerMid)
 app.use(dataMid)
 
 app.listen(3000)
+
+const wsServer = require('./service/web_socket_service')
+wsServer.listen()
